@@ -12,7 +12,7 @@ from rest_framework.permissions import IsAuthenticated
 class Another(View):
 
     #books= Book.objects.all()  #this will retrive all book from database
-    books = Book.objects.get(id=7) #return one record
+   # books = Book2.objects.get(id=7) #return one record
     books = Book.objects.filter(is_published=True)
     output=''
     for book in books:

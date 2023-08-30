@@ -6,6 +6,9 @@ from django.utils import timezone
 class BookNumber(models.Model):
     isbn_10=models.CharField(max_length=10,blank=True)
     isbn_13=models.CharField(max_length=13,blank=True)
+
+
+
 class Book(models.Model ):
     # TITLES= (
     #     ('J', 'Java'),
